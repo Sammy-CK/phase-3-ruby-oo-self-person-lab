@@ -32,7 +32,6 @@ class Person
     "all about the benjamins"
   end
 
-
   def take_bath
     self.hygiene += 4
     "♪ Rub-a-dub just relaxing in the tub ♫"
@@ -52,20 +51,17 @@ class Person
 
   def start_conversation(friend, topic)
     if topic == "politics"
-        self.happiness -= 2
-        friend.happiness -= 2
-        "blah blah partisan blah lobbyist"
+      self.happiness -= 2
+      friend.happiness -= 2
+      "blah blah partisan blah lobbyist"
     elsif topic == "weather"
-        self.happiness += 1
-        friend.happiness += 1 
-        "blah blah sun blah rain"       
+      self.happiness += 1
+      friend.happiness += 1
+      "blah blah sun blah rain"
     else
-        "blah blah blah blah blah"
+      "blah blah blah blah blah"
     end
-
   end
-
-
 end
 
 # guy1 = Person.new("sam")
